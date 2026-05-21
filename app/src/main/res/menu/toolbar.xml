@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:title="Glavna"
+        android:icon="@drawable/glavna"/>
+    <item
+        android:id="@+id/rezervacije"
+        android:title="Moje Rezervacije"
+        android:icon="@drawable/poruke"/>
+    <item
+        android:id="@+id/novi_smestaj"
+        android:title="Postavi Smestaj"
+        android:icon="@drawable/novi_oglas"/>
+    <item
+        android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/profil"/>
+</menu>

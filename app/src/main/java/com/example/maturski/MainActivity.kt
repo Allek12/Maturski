@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -11,8 +12,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.fragment.app.Fragment
 import com.example.maturski.ui.theme.MaturskiTheme
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.github.jan.supabase.auth.Auth
+import io.github.jan.supabase.auth.auth
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.storage.Storage
@@ -27,35 +31,42 @@ val supabase = createSupabaseClient(
     install(Storage)
 }
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            MaturskiTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+        setContentView(R.layout.activity_main)
+
+
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
+        val user = com.example.maturski.supabase.auth.currentUserOrNull()
+
+        val HomeFragment = Home()
+        val RegisterFragment = RegisterFragment()
+        val LoginFragment = LoginFragment()
+        val RezervacijeFragment = RezervacijeFragment()
+        val NoviSmestajFragment = NoviSmestajFragment()
+        val ProfilFragment = ProfilFragment()
+
+        PostaviFragment(LoginFragment)
+
+
+        //Menjanje fragmenata
+        bottomNavigationView.setOnNavigationItemSelectedListener{
+            when(it.itemId){
+                R.id.main -> PostaviFragment(HomeFragment)
+                R.id.rezervacije -> PostaviFragment(RezervacijeFragment)
+                R.id.novi_smestaj -> PostaviFragment(NoviSmestajFragment)
+                R.id.profil -> PostaviFragment(ProfilFragment())
             }
+            true
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MaturskiTheme {
-        Greeting("Android")
-    }
+    //Funkcija za menjanje fragmenata
+    private fun PostaviFragment(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment, fragment)
+            commit()
+        }
 }
