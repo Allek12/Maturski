@@ -48,7 +48,9 @@ class MainActivity : AppCompatActivity() {
         val NoviSmestajFragment = NoviSmestajFragment()
         val ProfilFragment = ProfilFragment()
 
-        PostaviFragment(LoginFragment)
+        if(user == null){
+            PostaviFragment(LoginFragment)
+        }
 
 
         //Menjanje fragmenata
