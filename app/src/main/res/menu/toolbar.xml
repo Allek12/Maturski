@@ -7,11 +7,11 @@
     <item
         android:id="@+id/rezervacije"
         android:title="Moje Rezervacije"
-        android:icon="@drawable/poruke"/>
+        android:icon="@drawable/rezervacije"/>
     <item
         android:id="@+id/novi_smestaj"
         android:title="Postavi Smestaj"
-        android:icon="@drawable/novi_oglas"/>
+        android:icon="@drawable/novi"/>
     <item
         android:id="@+id/profil"
         android:title="Profil"
