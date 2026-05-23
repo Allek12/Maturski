@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/facebook_siva"
+    android:background="@color/purple"
     tools:context=".NoviSmestajFragment">
 
     <ScrollView
@@ -15,7 +15,7 @@
             android:layout_width="333dp"
             android:layout_height="664dp"
             android:layout_gravity="center"
-            android:background="@color/plava"
+            android:background="@color/purple_2"
             android:orientation="vertical">
 
             <TextView
@@ -29,7 +29,7 @@
                 android:shadowDx="2"
                 android:shadowDy="2"
                 android:shadowRadius="3"
-                android:text="@string/novi_oglas"
+                android:text="novi oglas"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="36sp"
@@ -42,15 +42,15 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/naslov"
-                android:textColorHint="@color/md_theme_secondaryContainer"
+                android:hint="naslov"
+                android:textColorHint="@color/white"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/md_theme_secondaryContainer"
+                app:boxStrokeColor="@color/purple_700"
                 app:boxStrokeWidthFocused="1.5dp"
-                app:hintTextColor="@color/md_theme_secondaryContainer">
+                app:hintTextColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/naslovOglasa"
@@ -69,16 +69,16 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/opis"
-                android:textColorHint="@color/md_theme_secondaryContainer"
+                android:hint="opis"
+                android:textColorHint="@color/white"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/md_theme_secondaryContainer"
+                app:boxStrokeColor="@color/purple"
                 app:boxStrokeWidth="0.9dp"
                 app:boxStrokeWidthFocused="1.5dp"
-                app:hintTextColor="@color/md_theme_secondaryContainer">
+                app:hintTextColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/opisOglasa"
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Kategorija"
+                android:text="Kategorija"
                 android:textStyle="bold"
                 android:layout_marginLeft="24dp"
                 android:textSize="16dp"></TextView>
@@ -111,12 +111,12 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="10dp"
-                android:textColorHint="@color/md_theme_secondaryContainer"
+                android:textColorHint="@color/white"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/md_theme_secondaryContainer"
+                app:boxStrokeColor="@color/purple"
                 app:boxStrokeWidth="0.9dp"
                 app:boxStrokeWidthFocused="1.5dp"></Spinner>
 
@@ -127,16 +127,16 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/Cena"
-                android:textColorHint="@color/md_theme_secondaryContainer"
+                android:hint="Cena"
+                android:textColorHint="@color/white"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
                 app:boxCornerRadiusTopEnd="12dp"
                 app:boxCornerRadiusTopStart="12dp"
-                app:boxStrokeColor="@color/md_theme_secondaryContainer"
+                app:boxStrokeColor="@color/purple_700"
                 app:boxStrokeWidth="0.9dp"
                 app:boxStrokeWidthFocused="1.5dp"
-                app:hintTextColor="@color/md_theme_secondaryContainer">
+                app:hintTextColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/cenaOglasa"
@@ -149,19 +149,11 @@
                     android:textStyle="bold" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <CheckBox
-                android:id="@+id/oneTime"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/one_time"
-                android:textColor="#040303" />
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewSlike"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/oneTime"
+                app:layout_constraintTop_toBottomOf="@id/napraviOglasDugme"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -177,8 +169,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:onClick="napraviOglas"
-                android:text="@string/napravi_oglas"
-                android:textColor="@color/plava"
+                android:text="napravi_oglas"
+                android:textColor="@color/purple"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
 

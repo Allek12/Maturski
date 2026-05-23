@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfilFragment"
-    android:background="@color/facebook_siva">
+    android:background="@color/purple">
 
 
 
@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@color/plava">
+        android:background="@color/purple_200">
 
         <TextView
             android:id="@+id/imeProfila"
@@ -62,7 +62,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="32dp"
             android:paddingStart="10dp"
-            android:text="@string/Telefon"
+            android:text="Telefon"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +130,7 @@
                 android:id="@+id/pretrazivacSvojihOglasa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:queryHint="@string/pretrazi" />
+                android:queryHint="pretrazi" />
         </androidx.appcompat.widget.Toolbar>
 
         <androidx.recyclerview.widget.RecyclerView

@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/facebook_siva"
+    android:background="@color/purple"
     tools:context=".RegisterFragment">
 
     <LinearLayout
         android:layout_width="333dp"
         android:layout_height="664dp"
         android:layout_gravity="center"
-        android:background="@color/plava"
+        android:background="@color/purple_2"
         android:orientation="vertical">
 
         <TextView
@@ -27,7 +27,7 @@
             android:shadowDx="2"
             android:shadowDy="2"
             android:shadowRadius="3"
-            android:text="@string/registujte_se"
+            android:text="registujte se"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="36sp"
@@ -40,15 +40,15 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/ime"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="ime"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/imeKorisnika"
@@ -67,16 +67,16 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/prezime"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="prezime"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/prezimeKorisnika"
@@ -97,16 +97,16 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/Email"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="Email"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextEmailAddress"
@@ -125,18 +125,18 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/password"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="password"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
             app:endIconMode="password_toggle"
             app:endIconTint="@color/black"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
@@ -156,16 +156,16 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/Username"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="Username"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/UsernameKorisnika"
@@ -185,16 +185,16 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/Telefon"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="Telefon"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/telefonKorisnika"
@@ -214,16 +214,16 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/Mesto"
-            android:textColorHint="@color/md_theme_secondaryContainer"
+            android:hint="Mesto"
+            android:textColorHint="@color/white"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusTopEnd="12dp"
             app:boxCornerRadiusTopStart="12dp"
-            app:boxStrokeColor="@color/md_theme_secondaryContainer"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="0.9dp"
             app:boxStrokeWidthFocused="1.5dp"
-            app:hintTextColor="@color/md_theme_secondaryContainer">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mestoKorisnika"
@@ -244,8 +244,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:onClick="registerUser"
-            android:text="@string/registujte_se"
-            android:textColor="@color/plava"
+            android:text="registujte se"
+            android:textColor="@color/white"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
